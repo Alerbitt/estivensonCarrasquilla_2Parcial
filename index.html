@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uptrix - Especialistas en Autopartes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Barra de navegación con botón hamburguesa -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <!-- COMENTARIO: Aquí va el logo de Uptrix -->
+        <img src="img/logo.png" alt="Uptrix Logo"> Uptrix
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-section text-center">
+    <div class="container">
+      <h1>Innovación Automotriz Global</h1>
+      <p>Expertos en el diseño y fabricación de autopartes de alta calidad</p>
+      <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#catalogoModal">Ver Catálogo</button>
+    </div>
+  </div>
+
+  <!-- Carousel con 5 imágenes -->
+  <div class="container mt-5 mb-5">
+    <h2 class="text-center mb-4">Nuestros Productos Destacados</h2>
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- COMENTARIO: Aquí va la imagen 1 del carrusel -->
+          <img src="img/img1.png" class="d-block w-100" alt="
+          ">
+          <div class="carousel-caption">
+            <h3>Sistemas de Frenos</h3>
+            <p>Soluciones de alta calidad para garantizar la seguridad en la carretera</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- COMENTARIO: Aquí va la imagen 2 del carrusel -->
+          <img src="img/img2.png" class="d-block w-100" alt="">
+          <div class="carousel-caption">
+            <h3>Suspensión y Dirección</h3>
+            <p>Componentes diseñados para un manejo preciso y confortable</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- COMENTARIO: Aquí va la imagen 3 del carrusel -->
+          <img src="img/img3.png" class="d-block w-100" alt="">
+          <div class="carousel-caption">
+            <h3>Sistemas Eléctricos</h3>
+            <p>Innovación tecnológica para el funcionamiento óptimo del vehículo</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- COMENTARIO: Aquí va la imagen 4 del carrusel -->
+          <img src="img/img4.png" class="d-block w-100" alt="">
+          <div class="carousel-caption">
+            <h3>Motores y Transmisión</h3>
+            <p>Potencia y rendimiento para todo tipo de vehículos</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- COMENTARIO: Aquí va la imagen 5 del carrusel -->
+          <img src="img/img5.png" class="d-block w-100" alt="">
+          <div class="carousel-caption">
+            <h3>Repuestos Personalizados</h3>
+            <p>Diseñamos y fabricamos según las necesidades específicas de cada cliente</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Servicios -->
+  <div id="services" class="container mt-5 mb-5">
+    <h2 class="text-center mb-4">Nuestros Servicios</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card mb-3">
+          <div class="card-body text-center">
+            <i class="bi bi-gear service-icon"></i>
+            <h4 class="card-title">Diseño de Autopartes</h4>
+            <p class="card-text">Contamos con un equipo de ingenieros especializados en el diseño innovador de componentes automotrices.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoModal">Ver proceso</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card mb-3">
+          <div class="card-body text-center">
+            <i class="bi bi-tools service-icon"></i>
+            <h4 class="card-title">Fabricación</h4>
+            <p class="card-text">Nuestras plantas de producción en Europa y Asia cuentan con tecnología de punta para crear componentes de alta calidad.</p>
+            <button class="btn btn-primary">Más información</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card mb-3">
+          <div class="card-body text-center">
+            <i class="bi bi-truck service-icon"></i>
+            <h4 class="card-title">Distribución Global</h4>
+            <p class="card-text">Red logística internacional que garantiza entregas puntuales en cualquier parte del mundo.</p>
+            <button class="btn btn-primary">Cobertura</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Productos -->
+  <div id="products" class="container mt-5 mb-5">
+    <h2 class="text-center mb-4">Nuestros Productos</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <!-- COMENTARIO: Aquí va la imagen de producto 1 -->
+          <img src="img/producto1.jpg" class="card-img-top" alt="Sistema de frenos">
+          <div class="card-body">
+            <h5 class="card-title">Sistemas de Frenos</h5>
+            <p class="card-text">Discos, pastillas y componentes hidráulicos de alta resistencia.</p>
+            <a href="#" class="btn btn-primary">Ver detalles</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <!-- COMENTARIO: Aquí va la imagen de producto 2 -->
+          <img src="img/producto2.jpg" class="card-img-top" alt="Sistemas de suspensión">
+          <div class="card-body">
+            <h5 class="card-title">Sistemas de Suspensión</h5>
+            <p class="card-text">Amortiguadores, resortes y componentes diseñados para optimizar el confort.</p>
+            <a href="#" class="btn btn-primary">Ver detalles</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <!-- COMENTARIO: Aquí va la imagen de producto 3 -->
+          <img src="img/producto3.jpg" class="card-img-top" alt="Componentes de motor">
+          <div class="card-body">
+            <h5 class="card-title">Componentes de Motor</h5>
+            <p class="card-text">Pistones, válvulas y bombas de agua con tecnología avanzada.</p>
+            <a href="#" class="btn btn-primary">Ver detalles</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contacto -->
+  <div id="contact" class="container mt-5 mb-5">
+    <h2 class="text-center mb-4">Contáctanos</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Información de contacto</h5>
+            <p><strong>Sede principal:</strong> <!-- COMENTARIO: Aquí va la dirección de la sede principal --></p>
+            <p><strong>Email:</strong> info@uptrix.com</p>
+            <p><strong>Teléfono:</strong> <!-- COMENTARIO: Aquí va el teléfono de contacto --></p>
+            <h5 class="mt-4">Síguenos en redes sociales</h5>
+            <div class="social-icons">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Uptrix</h5>
+          <p>Expertos en autopartes con presencia global.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Enlaces rápidos</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Inicio</a></li>
+            <li><a href="#services" class="text-white">Servicios</a></li>
+            <li><a href="#products" class="text-white">Productos</a></li>
+            <li><a href="#contact" class="text-white">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Ubicación</h5>
+          <p>Filiales en Europa y Asia</p>
+        </div>
+      </div>
+      <hr class="bg-white">
+      <div class="text-center">
+        <p>&copy; 2023 Uptrix. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Offcanvas para Misión y Visión -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Sobre Uptrix</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="mb-4">
+        <h4>Misión</h4>
+        <p>Nuestra misión en Uptrix es transformar la industria automotriz global mediante el diseño, fabricación y distribución de autopartes innovadoras y de alta calidad. Nos comprometemos a satisfacer las necesidades de nuestros clientes con soluciones precisas y eficientes, apoyados en nuestra red internacional de filiales en Europa y Asia y en el profundo conocimiento técnico de nuestro equipo.</p>
+      </div>
+      <div>
+        <h4>Visión</h4>
+        <p>Aspiramos a posicionar a Uptrix como el referente mundial en innovación automotriz, creando componentes que definan el futuro de la movilidad. Buscamos expandir nuestra influencia global, estableciendo nuevos estándares de excelencia en cada autoparte que desarrollamos, mientras construimos relaciones duraderas con fabricantes, distribuidores y usuarios finales en todos los mercados donde operamos.</p>
+      </div>
+      <div class="mt-4">
+        <h4>Valores</h4>
+        <ul>
+          <li><strong>Innovación:</strong> Buscamos constantemente nuevas soluciones y mejoras.</li>
+          <li><strong>Calidad:</strong> Nos comprometemos con los más altos estándares en cada componente.</li>
+          <li><strong>Responsabilidad:</strong> Actuamos con integridad y respeto hacia nuestros clientes, empleados y el medio ambiente.</li>
+          <li><strong>Excelencia:</strong> Nos esforzamos por superar expectativas en todo lo que hacemos.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para mostrar PDF (Catálogo) -->
+  <div class="modal fade" id="catalogoModal" tabindex="-1" aria-labelledby="catalogoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="catalogoModalLabel">Catálogo de Productos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- COMENTARIO: Aquí va el PDF del catálogo -->
+          <iframe src="archivos/catalogo.pdf" width="100%" height="500px"></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Descargar PDF</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para mostrar Video -->
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="videoModalLabel">Proceso de Diseño de Autopartes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+            <!-- COMENTARIO: Aquí va el video -->
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/9RVrCRU78Nw?si=FKykzfg_vfBH9euG" title="Proceso de diseño" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS y Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

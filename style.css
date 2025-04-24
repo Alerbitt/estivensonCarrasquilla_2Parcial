@@ -1,0 +1,112 @@
+/* Estilos para Uptrix Website */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar-brand img {
+    height: 40px;
+  }
+  
+  /* Hero section */
+  .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    margin-bottom: 30px;
+  }
+  
+  /* Carousel */
+  .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-item img {
+      height: 200px;
+    }
+  }
+  
+  /* Servicios */
+  .service-icon {
+    font-size: 2.5rem;
+    color: #0d6efd;
+    margin-bottom: 15px;
+  }
+  
+  /* Cards */
+  .card {
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #212529;
+    color: white;
+    padding: 30px 0;
+    margin-top: 30px;
+  }
+  
+  /* Offcanvas */
+  .offcanvas-body {
+    text-align: justify;
+  }
+  
+  /* Social icons */
+  .social-icons a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #0d6efd;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .hero-section {
+      padding: 60px 0;
+    }
+    
+    h1 {
+      font-size: 1.8rem;
+    }
+    
+    .service-icon {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero-section {
+      padding: 40px 0;
+    }
+    
+    h1 {
+      font-size: 1.5rem;
+    }
+    
+    .card-img-top {
+      height: 150px;
+    }
+  }
